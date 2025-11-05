@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000; /* Pure black background */
+  color: #cfcfe0; /* Soft off-white text */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  color: #1de9b6; /* Electric mint green */
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #1de9b6;
+}
+
+h2 {
+  color: #8c9eff; /* Soft neon blue */
+  font-size: 1.8rem;
+  margin-top: 20px;
+  text-shadow: 0 0 8px #8c9eff;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #1a1a1a; /* Dark gray for list items to stand out against black */
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-left: 4px solid #ffffff; /* White accent */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #333333; /* Slightly lighter hover effect */
+  transform: scale(1.03);
+}
+
+a {
+  color: #1de9b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
