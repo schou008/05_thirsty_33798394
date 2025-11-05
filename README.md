@@ -1,4 +1,4 @@
-## The Thirsty Students (Simply Drinks) Projcet
+## The Thirsty Students (Simply Drinks) Web Application
 
 This project is a Node.js web application built with Express and EJS. The project is a drink shop called The Thirsty Students (I have named it Simply Drinks). The app uses EJS templates to display webpages and show data like the shop name and product list. It also includes forms that let users search for drinks and register their details. The project demonstrates how to create routes, display dynamic content, and handle both GET and POST form submissions.
 
@@ -49,3 +49,7 @@ If you already have the EJS package then you can skip this step
 1.4 Added register.ejs file to the views folder
 
 1.5 Added information about the web application such as what it is about, what technologies used, explaining how to run and use the app to the README.md file
+
+1.6 Added Public Folder which includes styles.css file
+
+1.7 Added code to about.ejs, index.ejs, register.ejs, search.ejs and index.js file so that the style used in the website from the styles.css file can be used for each of the pages
