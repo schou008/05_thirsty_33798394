@@ -50,6 +50,6 @@ If you already have the EJS package then you can skip this step
 
 1.5 Added information about the web application such as what it is about, what technologies used, explaining how to run and use the app to the README.md file
 
-1.6 Added Public Folder which includes styles.css file
+1.6 Added cssFiles Folder which includes styles.css file
 
 1.7 Added code to about.ejs, index.ejs, register.ejs, search.ejs and index.js file so that the style used in the website from the styles.css file can be used for each of the pages
