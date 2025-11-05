@@ -5,3 +5,5 @@
 1.1 Added a routes folder that includes the main.js file
 
 1.2 Added Views Folder which contains the about.ejs file and the index.ejs file
+
+1.3 Added search.ejs file to the views folder
