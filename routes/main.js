@@ -3,8 +3,21 @@ const express = require("express");
 const router = express.Router(); 
 
 // Define the Shops Data 
-var shopData = {shopName: "Simply Drinks",
-                productCategories:["Beer", "Wine", "Soft Drinks", "Hot Drinks"]} 
+var shopData = {
+  shopName: "Simply Drinks",
+  productCategories: ["Beer", "Wine", "Soft Drinks", "Hot Drinks"],
+
+  // Defines a list of shops with manager + address
+  shops: [
+    { manager: "Thomas Johnson", address: "12 High Street, London" },
+    { manager: "Ben Smith", address: "22 Baker Street, London" },
+    { manager: "Carla Gomez", address: "5 Kings Road, London" },
+    { manager: "David Lee", address: "89 Queen's Avenue, London" },
+    { manager: "Emily Brown", address: "301 Oxford Street, London" }
+  ]
+};
+
+
 
 // Handle the main routes  
 router.get("/", function (req, res) { 
@@ -19,8 +32,7 @@ router.get("/search", function (req, res) {
     res.render("search.ejs", shopData); 
 });
 
-router.get('/search_result', function (req, res) { 
-// TODO: search in the database 
+router.get('/search_result', function (req, res) {  
     res.send("You searched for " + req.query.search_text + " in " + req.query.category); 
 });
 
