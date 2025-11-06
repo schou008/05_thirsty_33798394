@@ -47,5 +47,22 @@ router.post("/registered", (req, res) => {
   );   
 }); 
 
+// Show the survey form
+router.get('/survey', (req, res) => {
+    res.render('survey', { 
+        shopName: shopData.shopName,
+        productCategories: shopData.productCategories
+    });
+});
+
+// Handle survey submission
+router.post('/survey', (req, res) => {
+    const response = req.body;
+    res.render('surveyResult', { 
+        response,
+        shopName: shopData.shopName
+    });
+});
+
 // Export the router object so index.js can access it 
 module.exports = router; 

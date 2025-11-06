@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=shopName%> Customer Survey</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Customer Survey</h1>
+
+    <form action="/survey" method="POST">
+
+        <label>First Name:</label><br>
+        <input type="text" name="firstName" required><br><br>
+
+        <label>Surname:</label><br>
+        <input type="text" name="surname" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label>How old are you?</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Which of the following drinks categories do you consume?</label><br>
+        <% productCategories.forEach(category => { %>
+    <input type="radio" name="drinkCategory" value="<%= category %>"> <%= category %><br>
+        <% }) %>
+        <br>
+
+        <label>Are you a student?</label>
+        <input type="checkbox" name="isStudent" value="Yes"><br><br>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <!-- Email Validation -->
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    const email = document.getElementById("email").value.trim();
+    const strictEmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$/;
+
+    if (!strictEmailRegex.test(email)) {
+      e.preventDefault();
+      alert("Please enter a valid email address (e.g., user@example.com or user@example.co.uk).");
+    }
+  });
+</script>
+
+</body>
+</html>
