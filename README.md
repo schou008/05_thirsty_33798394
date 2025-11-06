@@ -59,3 +59,5 @@ If you already have the EJS package then you can skip this step
 1.9 Added survey.ejs and surveyResult.ejs file to views folder
 
 2.0 Added comments to main.js file, about.ejs file, index.ejs file, register.ejs file, search.ejs file, survey.ejs file, surveyResult.ejs file and the index.ejs file so it is more clear and understandable
+
+2.1 Added links.txt file
