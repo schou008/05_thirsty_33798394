@@ -53,3 +53,5 @@ If you already have the EJS package then you can skip this step
 1.6 Added cssFiles Folder which includes styles.css file
 
 1.7 Added code to about.ejs, index.ejs, register.ejs, search.ejs and index.js file so that the style used in the website from the styles.css file can be used for each of the pages
+
+1.8 Added Code to main.js and about.ejs to show managers and shop locations on the about page
