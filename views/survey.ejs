@@ -2,13 +2,15 @@
 <html>
 <head>
     <title><%=shopName%> Customer Survey</title>
+    <!-- External stylesheet for page styling -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+    <!-- Page heading -->
     <h1>Customer Survey</h1>
-
+    <!-- Survey form (sends data to server using POST) -->
     <form action="/survey" method="POST">
-
+        <!-- User details -->
         <label>First Name:</label><br>
         <input type="text" name="firstName" required><br><br>
 
@@ -45,6 +47,5 @@
     }
   });
 </script>
-
 </body>
 </html>

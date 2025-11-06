@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="/styles.css">
   </head> 
   <body> 
+    <!-- Page heading -->
     <h1>Welcome to <%=shopName%> Shop</h1>  
-    <h2>Here are some things that we sell:</h2> 
+    <h2>Here are some things that we sell:</h2>
+    <!-- Display product categories -->
     <ul> 
       <% for(let i = 0; i < productCategories.length; i++) { %> 
         <li><%= productCategories[i] %></li> 
